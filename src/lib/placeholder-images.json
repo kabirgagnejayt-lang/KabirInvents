@@ -1,0 +1,76 @@
+{
+  "placeholderImages": [
+    {
+      "id": "project-qsolve",
+      "description": "Screenshot of Qsolve AI homework helper",
+      "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2MjQyMTgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code screen"
+    },
+    {
+      "id": "project-fastpass",
+      "description": "Abstract image representing a digital identity service",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "imageHint": "digital identity"
+    },
+    {
+      "id": "project-androwatch",
+      "description": "Screenshot of AndroWatch launcher",
+      "imageUrl": "https://images.unsplash.com/photo-1752652011717-f06f7ed3927a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXRjaCUyMGludGVyZmFjZXxlbnwwfHx8fDE3NjIzODg5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "watch interface"
+    },
+    {
+      "id": "project-syncband",
+      "description": "Screenshot of SyncBand app",
+      "imageUrl": "https://images.unsplash.com/photo-1601972599720-36938d4ecd31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzYyNDc1NzQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile app"
+    },
+    {
+      "id": "project-makemyapp",
+      "description": "Screenshot of MakeMyApp app builder",
+      "imageUrl": "https://images.unsplash.com/photo-1762329381993-c6834c7ff010?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3ZWIlMjBpbnRlcmZhY2V8ZW58MHx8fHwxNzYyNTAzNjUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web interface"
+    },
+    {
+      "id": "project-cablecar",
+      "description": "Photo of Arduino cable car project",
+      "imageUrl": "https://images.unsplash.com/photo-1608402275335-cd8e1d0d19fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHwkaXklMjBlbGVjdHJvbmljc3xlbnwwfHx8fDE3NjI1MDM2NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "diy electronics"
+    },
+    {
+      "id": "print-tinypod",
+      "description": "Image of TinyPod Stand 3D print",
+      "imageUrl": "https://images.unsplash.com/photo-1603974739154-7b055aeec101?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHwzZCUyMHByaW50fGVufDB8fHx8MTc2MjUwMzY1Mnww&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "3d print"
+    },
+    {
+      "id": "project-pulse-circle",
+      "description": "Abstract image representing a connected community or ecosystem",
+      "imageUrl": "https://images.unsplash.com/photo-1647888162325-346cc541bcc9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764",
+      "imageHint": "connected circles"
+    },
+    {
+      "id": "project-store",
+      "description": "A collection of retro items and collectibles in an online store.",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1684785617500-fb22234eeedd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+      "imageHint": "retro collectibles"
+    },
+    {
+      "id": "print-phone-stand",
+      "description": "A 3D printed phone stand",
+      "imageUrl": "https://images.unsplash.com/photo-1707651385176-8c7492596164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaG9uZSUyMHN0YW5kfGVufDB8fHx8MTc2MjQ1MTM5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phone stand"
+    },
+    {
+      "id": "print-room-sign",
+      "description": "A 3D printed room sign",
+      "imageUrl": "https://images.unsplash.com/photo-1685741149700-1c4e6403c7bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkb29yJTIwc2lnbnxlbnwwfHx8fDE3NjI1Mjk5ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "door sign"
+    },
+    {
+      "id": "project-kardz",
+      "description": "Kardz digital identity app",
+      "imageUrl": "https://images.unsplash.com/photo-1588072432836-e10032774350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGNhcmR8ZW58MHx8fHwxNzYyNTc2MjMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business card"
+    }
+  ]
+}
