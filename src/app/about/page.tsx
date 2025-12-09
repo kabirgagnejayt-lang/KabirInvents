@@ -40,14 +40,17 @@ export default function AboutPage() {
     <div className="container max-w-5xl py-12 md:py-24 lg:py-32">
       <div className="flex flex-col justify-center space-y-8">
         <div className="text-center">
-          <div className="inline-block">
-            <Image
-              src="https://i.postimg.cc/MZRx6jJd/Screenshot-2025-11-07-233154.png"
-              alt="Kabir Gagneja"
-              width={150}
-              height={150}
-              className="rounded-full object-cover shadow-lg"
-            />
+          <div className="inline-block w-[150px] h-[150px] shadow-lg">
+            <div style={{ position: 'relative', width: '100%', height: '0px', paddingBottom: '100.000%' }}>
+              <iframe
+                allow="fullscreen;autoplay"
+                allowFullScreen
+                height="100%"
+                src="https://streamable.com/e/yhieiq?autoplay=1&loop=0&muted=1&nocontrols=1"
+                width="100%"
+                style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: '0px', top: '0px', overflow: 'hidden' }}
+              ></iframe>
+            </div>
           </div>
           <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl mt-6">
             About Kabir Gagneja

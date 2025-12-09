@@ -16,14 +16,17 @@ export default function Home() {
         <div className="absolute inset-0 animated-gradient opacity-20"></div>
         <div className="container px-4 md:px-6 relative">
           <div className="space-y-6">
-            <div className="mx-auto">
-              <Image
-                src="https://i.postimg.cc/MZRx6jJd/Screenshot-2025-11-07-233154.png"
-                alt="Kabir Gagneja"
-                width={150}
-                height={150}
-                className="rounded-full object-cover mx-auto"
-              />
+            <div className="mx-auto w-[150px] h-[150px]">
+              <div style={{ position: 'relative', width: '100%', height: '0px', paddingBottom: '100.000%' }}>
+                <iframe
+                  allow="fullscreen;autoplay"
+                  allowFullScreen
+                  height="100%"
+                  src="https://streamable.com/e/yhieiq?autoplay=1&loop=0&muted=1&nocontrols=1"
+                  width="100%"
+                  style={{ border: 'none', width: '100%', height: '100%', position: 'absolute', left: '0px', top: '0px', overflow: 'hidden' }}
+                ></iframe>
+              </div>
             </div>
             <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Invent. Code. Create.
