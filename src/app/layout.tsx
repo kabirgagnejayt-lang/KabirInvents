@@ -4,7 +4,6 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Navbar } from '@/components/Navbar';
-import HostingDisclaimer from '@/components/HostingDisclaimer';
 import { Footer } from '@/components/Footer';
 
 export async function generateMetadata(
@@ -99,7 +98,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
-            <HostingDisclaimer />
             <Navbar />
             <SupportBanner />
             <main className="flex-grow">{children}</main>

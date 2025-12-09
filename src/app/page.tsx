@@ -49,6 +49,24 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
+              <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Latest Update</h2>
+              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                KabirDNS Demo is now OUT! Experience a faster, simpler, and more secure DNS.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="https://kabirdns.kabirinvents.com" target="_blank" rel="noopener noreferrer">
+              <Button size="lg">Try KabirDNS</Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32 border-t bg-secondary/20 dark:bg-secondary/10">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
               <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">FastPass</h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 My latest project demo.
@@ -66,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary/20 dark:bg-secondary/10">
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -125,23 +143,22 @@ export default function Home() {
           <div className="space-y-3">
             <h2 className="text-3xl font-headline font-bold tracking-tighter md:text-4xl/tight">Featured Projects</h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-             I'm currently focusing my efforts on my new project, FastPass, and supporting existing users of Qsolve.
+             I'm currently focusing my efforts on my new project, FastPass, and launching KabirDNS.
             </p>
           </div>
           <div className="mx-auto grid max-w-sm md:max-w-2xl md:grid-cols-2 items-start gap-8 mt-8">
+            <ProjectCard
+              title="KabirDNS"
+              description="A faster, simpler, and more secure DNS resolver powered by Oracle Cloud."
+              image={getProjectImage("project-kabirdns")}
+              link="https://kabirdns.kabirinvents.com"
+              status="Live"
+            />
             <ProjectCard
               title="FastPass"
               description="A digital identity service to simplify online interactions with autofill and SSO."
               image={getProjectImage("project-fastpass")}
               link="https://fastpass.kabirinvents.com"
-              status="Live"
-            />
-            <ProjectCard
-              title="Qsolve"
-              description="An AI-powered homework helper to assist students."
-              image={getProjectImage("project-qsolve")}
-              link="https://qsolve.kabirinvents.com"
-              storeLink="https://play.google.com/store/apps/details?id=appinventor.ai_kabirgagnejayt.GradeWithAI&hl=en"
               status="Live"
             />
           </div>

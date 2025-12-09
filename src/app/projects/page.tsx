@@ -4,6 +4,13 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
+    id: "project-kabirdns",
+    title: "KabirDNS",
+    description: "A faster, simpler, and more secure DNS resolver powered by Oracle Cloud.",
+    link: "https://kabirdns.kabirinvents.com",
+    status: "Live"
+  },
+  {
     id: "project-fastpass",
     title: "FastPass",
     description: "A digital identity service for autofill and single sign-on (SSO). Currently in Beta.",
@@ -16,7 +23,7 @@ const projects = [
     description: "An AI homework solver (links to qsolve.kabirinvents.com)",
     link: "https://qsolve.kabirinvents.com",
     storeLink: "https://play.google.com/store/apps/details?id=appinventor.ai_kabirgagnejayt.GradeWithAI&hl=en",
-    status: "Live"
+    status: "Discontinued"
   },
   {
     id: "project-pulse-circle",

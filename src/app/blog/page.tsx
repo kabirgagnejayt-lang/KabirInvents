@@ -18,18 +18,24 @@ const journeySections = [
     ],
     outro: (
       <>
-        <p className="font-semibold text-foreground mt-4">📢 Important: Qsolve Has Been Permanently Discontinued</p>
-        <p className="mt-2">This update also marks the end of an older project. Qsolve successfully ran for 3 to 4 months and may still appear on the Google Play Store, but development, support, and updates have fully ended. It will no longer receive fixes or improvements. Users are encouraged to switch to KabirDNS for the latest technology.</p>
         <p className="mt-4 font-semibold">How to Start Using KabirDNS:</p>
         <ul className="mt-2 space-y-1 list-none pl-0">
           <li><strong>Android Private DNS:</strong> Settings → Network & Internet → Private DNS → Enter: pdns.kabirinvents.com</li>
           <li><strong>Windows, Mac, Linux:</strong> Set DNS resolver to: dns.kabirinvents.com</li>
         </ul>
-        <p className="mt-4 italic">KabirDNS represents the next stage of our networking technology. Thank you to everyone who supported Qsolve during its 3–4 month journey — it was an amazing experimental project, but it's time to move forward. KabirDNS will now be our main focus, with new features, performance upgrades, and more services coming soon. — KabirInvents</p>
         <Link href="https://kabirdns.kabirinvents.com" target="_blank" rel="noopener noreferrer">
           <Button className="mt-4">Try KabirDNS Today</Button>
         </Link>
       </>
+    )
+  },
+  {
+    icon: "📢",
+    title: "Important Announcement: Qsolve Is Permanently Discontinued",
+    date: "December 9, 2025 (Age 12)",
+    description: "This update also marks the end of an older project. Qsolve successfully ran for 3 to 4 months and may still appear on the Google Play Store, but development, support, and updates have fully ended. It will no longer receive fixes or improvements. Users are encouraged to switch to KabirDNS for the latest technology.",
+    outro: (
+      <p className="mt-4 italic">KabirDNS represents the next stage of our networking technology. Thank you to everyone who supported Qsolve during its 3–4 month journey — it was an amazing experimental project, but it's time to move forward. KabirDNS will now be our main focus, with new features, performance upgrades, and more services coming soon. — KabirInvents</p>
     )
   },
   {
