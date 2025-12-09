@@ -5,6 +5,34 @@ import { Button } from "@/components/ui/button";
 
 const journeySections = [
   {
+    icon: "🌐",
+    title: "Introducing the New KabirDNS — Faster, Simpler, and More Secure",
+    date: "December 9, 2025 (Age 12)",
+    description: "Today marks the official launch of the fully redesigned KabirDNS, now available at kabirdns.kabirinvents.com. This new version gives users a faster resolver, a modern interface, and a more secure DNS experience powered by Oracle Cloud. Built from the ground up with more speed, reliability, a cleaner UI, better privacy, and a complete rewrite of the core DNS engine.",
+    details: [
+      "🔹 Direct DNS: Fast, clean, and stable DNS resolver at dns.kabirinvents.com",
+      "🔹 Private DNS (DoT): Fully encrypted DNS for Android devices at pdns.kabirinvents.com",
+      "🔹 Oracle Cloud Network: Up to 10 Gbps bandwidth, 500,000 QPS capability, stronger uptime",
+      "🔹 New Website: Dashboard + documentation at kabirdns.kabirinvents.com",
+      "🔹 Brand New Logo: Fresh identity for the next stage of networking technology"
+    ],
+    outro: (
+      <>
+        <p className="font-semibold text-foreground mt-4">📢 Important: Qsolve Has Been Permanently Discontinued</p>
+        <p className="mt-2">This update also marks the end of an older project. Qsolve successfully ran for 3 to 4 months and may still appear on the Google Play Store, but development, support, and updates have fully ended. It will no longer receive fixes or improvements. Users are encouraged to switch to KabirDNS for the latest technology.</p>
+        <p className="mt-4 font-semibold">How to Start Using KabirDNS:</p>
+        <ul className="mt-2 space-y-1 list-none pl-0">
+          <li><strong>Android Private DNS:</strong> Settings → Network & Internet → Private DNS → Enter: pdns.kabirinvents.com</li>
+          <li><strong>Windows, Mac, Linux:</strong> Set DNS resolver to: dns.kabirinvents.com</li>
+        </ul>
+        <p className="mt-4 italic">KabirDNS represents the next stage of our networking technology. Thank you to everyone who supported Qsolve during its 3–4 month journey — it was an amazing experimental project, but it's time to move forward. KabirDNS will now be our main focus, with new features, performance upgrades, and more services coming soon. — KabirInvents</p>
+        <Link href="https://kabirdns.kabirinvents.com" target="_blank" rel="noopener noreferrer">
+          <Button className="mt-4">Try KabirDNS Today</Button>
+        </Link>
+      </>
+    )
+  },
+  {
     icon: "🚀",
     title: "FastPass Beta 1.0 is Here!",
     date: "November 24, 2025 (Age 12)",
@@ -49,8 +77,8 @@ const journeySections = [
   {
     icon: "📚",
     title: "Qsolve — AI for Learning",
-    date: "September 5, 2025 (Age 12)",
-    description: "I built Qsolve, an AI-powered study companion that scans images, extracts questions, and explains answers step by step. It became my first major public web app, hosted at qsolve.kabirinvents.com. It gained production access on September 20, 2025, proving that my projects could go beyond experiments and actually help people."
+    date: "September 5, 2025 - December 9, 2025 (Age 12)",
+    description: "I built Qsolve, an AI-powered study companion that scans images, extracts questions, and explains answers step by step. It became my first major public web app, hosted at qsolve.kabirinvents.com. It gained production access on September 20, 2025, proving that my projects could go beyond experiments and actually help people. After successfully running for 3-4 months, Qsolve has been permanently discontinued as I transition focus to KabirDNS and other new ventures."
   },
   {
     icon: "🌐",
@@ -118,8 +146,9 @@ const journeySections = [
 ];
 
 const projectStatus = [
+    { name: "KabirDNS", status: "🚀 Live & Active", description: "Fast, secure DNS resolver powered by Oracle Cloud." },
     { name: "FastPass", status: "🚀 Live in Beta", description: "Digital identity service for autofill and SSO." },
-    { name: "Qsolve", status: "✅ Live & In Production", description: "AI-powered homework helper" },
+    { name: "Qsolve", status: "❌ Discontinued", description: "AI-powered homework helper (ran 3-4 months, now ended)" },
     { name: "Pulse Ecosystem", status: "❌ Discontinued", description: "All apps in the Pulse ecosystem are now paused." },
     { name: "Kabir Gagneja Invents Store", status: "📦 Archived", description: "Archived, but viewable at kabirinvents.store" },
     { name: "Hardware Projects", status: "❌ Discontinued", description: "Arduino, 3D printing, and other maker projects are on hold." },
@@ -203,7 +232,8 @@ export default function BlogPage() {
                         <h4 className="font-bold text-lg mb-2">✨ Short-term goals:</h4>
                         <ul className="list-disc list-inside text-muted-foreground space-y-1">
                             <li>Focus entirely on the new secret project.</li>
-                            <li>Continue supporting Qsolve for existing users.</li>
+                            <li>Grow and improve KabirDNS with new features.</li>
+                            <li>Continue supporting FastPass Beta users.</li>
                         </ul>
                     </div>
                     <div>
