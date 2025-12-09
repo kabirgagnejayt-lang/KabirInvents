@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -9,7 +10,6 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "./ThemeToggle";
-import { Logo } from "./icons";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -29,7 +29,13 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Logo className="h-6 w-6" />
+          <Image
+            src="https://i.postimg.cc/7CqZHgdF/Chat-GPT-Image-Dec-9-2025-02-50-22-PM.png"
+            alt="Kabir Gagneja Invents Logo"
+            width={32}
+            height={32}
+            className="rounded-full"
+          />
           <span className="hidden font-bold sm:inline-block font-headline">
             Kabir Gagneja Invents
           </span>
@@ -60,7 +66,13 @@ export function Navbar() {
             <SheetContent side="left">
               <div className="flex flex-col h-full py-6">
                 <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Logo className="h-6 w-6" />
+                  <Image
+                    src="https://i.postimg.cc/7CqZHgdF/Chat-GPT-Image-Dec-9-2025-02-50-22-PM.png"
+                    alt="Kabir Gagneja Invents Logo"
+                    width={32}
+                    height={32}
+                    className="rounded-full"
+                  />
                   <span className="font-bold font-headline">
                     Kabir Gagneja Invents
                   </span>

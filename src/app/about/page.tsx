@@ -46,7 +46,7 @@ export default function AboutPage() {
               alt="Kabir Gagneja Invents Logo"
               width={150}
               height={150}
-              className="shadow-lg"
+              className="shadow-lg rounded-full"
             />
           </div>
           <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl mt-6">

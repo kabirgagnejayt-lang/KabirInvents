@@ -22,7 +22,7 @@ export default function Home() {
                 alt="Kabir Gagneja Invents Logo"
                 width={150}
                 height={150}
-                className="mx-auto"
+                className="mx-auto rounded-full"
               />
             </div>
             <h1 className="text-4xl font-headline font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
