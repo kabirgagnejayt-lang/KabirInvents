@@ -8,70 +8,28 @@ const projects = [
     title: "KabirDNS",
     description: "A faster, simpler, and more secure DNS resolver powered by Oracle Cloud.",
     link: "https://kabirdns.kabirinvents.com",
-    status: "Live"
+    status: "Live",
+    customImage: "https://i.postimg.cc/3y3x8gzM/Chat_GPT_Image_Dec_9_2025_02_25_47_PM.png"
   },
   {
     id: "project-fastpass",
     title: "FastPass",
     description: "A digital identity service for autofill and single sign-on (SSO). Currently in Beta.",
     link: "https://fastpass.kabirinvents.com",
-    status: "Live"
+    status: "Live",
+    customImage: "https://i.postimg.cc/XXqmMpHZ/Chat_GPT_Image_Dec_9_2025_03_20_57_PM.png"
   },
   {
     id: "project-qsolve",
     title: "Qsolve",
-    description: "An AI homework solver (links to qsolve.kabirinvents.com)",
+    description: "An AI homework solver. Removed from Play Store and website is offline. The app will show an error.",
     link: "https://qsolve.kabirinvents.com",
-    storeLink: "https://play.google.com/store/apps/details?id=appinventor.ai_kabirgagnejayt.GradeWithAI&hl=en",
     status: "Discontinued"
-  },
-  {
-    id: "project-pulse-circle",
-    title: "Pulse Circle",
-    description: "A social networking platform concept.",
-    status: "Discontinued"
-  },
-  {
-    id: "project-store",
-    title: "Kabir Gagneja Invents Store",
-    description: "An online store for my creations & retro finds, now in an archived state.",
-    link: "https://kabirinvents.store",
-    status: "Archived"
-  },
-  {
-    id: "project-cablecar",
-    title: "Arduino Cable Car",
-    description: "A hardware project featuring a miniature cable car system.",
-    status: "Discontinued"
-  },
-  {
-    id: "project-kardz",
-    title: "Kardz",
-    description: "A future idea for a digital identity platform.",
-    status: "Discontinued"
-  },
-  {
-    id: "project-makemyapp",
-    title: "MakeMyApp",
-    description: "A future idea for an intuitive app builder platform.",
-    status: "Discontinued"
-  },
-  {
-    id: "project-androwatch",
-    title: "AndroWatch",
-    description: "A future idea for a versatile Android watch launcher.",
-    status: "Discontinued"
-  },
-  {
-    id: "project-syncband",
-    title: "SyncBand",
-    description: "A future idea for a watch-phone integration app.",
-    status: "Discontinued"
-  },
+  }
 ];
 
 export default function ProjectsPage() {
-  const getProjectImage = (id: string) => PlaceHolderImages.find(p => p.id === id)!;
+  const getProjectImage = (id: string) => PlaceHolderImages.find(p => p.id === id);
 
   return (
     <div className="container py-12 md:py-24 lg:py-32">
@@ -85,17 +43,24 @@ export default function ProjectsPage() {
       </div>
 
       <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            image={getProjectImage(project.id)}
-            link={project.link}
-            storeLink={project.storeLink}
-            status={project.status as any}
-          />
-        ))}
+        {projects.map((project) => {
+          const placeholder = getProjectImage(project.id);
+          const image = project.customImage 
+            ? { id: project.id, description: project.title, imageUrl: project.customImage, imageHint: project.title }
+            : placeholder!;
+
+          return (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              image={image}
+              link={project.link}
+              // storeLink={project.storeLink} // Removed as per request
+              status={project.status as any}
+            />
+          );
+        })}
       </div>
     </div>
   );
