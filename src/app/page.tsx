@@ -146,7 +146,14 @@ export default function Home() {
              I'm currently focusing my efforts on my new project, FastPass, and launching KabirDNS.
             </p>
           </div>
-          <div className="mx-auto grid max-w-sm md:max-w-2xl md:grid-cols-2 items-start gap-8 mt-8">
+          <div className="mx-auto grid max-w-sm md:max-w-4xl lg:max-w-6xl md:grid-cols-2 lg:grid-cols-3 items-start gap-8 mt-8">
+            <ProjectCard
+              title="Gagneja Speciality Clinic"
+              description="Official website for Gagneja Speciality Clinic. Note: Fastpass and this site is currently under maintenance."
+              image={getProjectImage("project-clinic")}
+              link="https://gagnejaspecialityclinic.kabirinvents.com/"
+              status="Live"
+            />
             <ProjectCard
               title="KabirDNS"
               description="A faster, simpler, and more secure DNS resolver powered by Oracle Cloud."

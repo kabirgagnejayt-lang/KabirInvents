@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "project-clinic",
+      "description": "Gagneja Speciality Clinic Website",
+      "imageUrl": "https://i.postimg.cc/rDvk9Fbm/gagneja-speciality-clinic-delhi-1481544174-584e91eeb87bb-(2).webp",
+      "imageHint": "clinic interior"
+    },
+    {
       "id": "project-qsolve",
       "description": "Screenshot of Qsolve AI homework helper",
       "imageUrl": "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2RlJTIwc2NyZWVufGVufDB8fHx8MTc2MjQyMTgyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
