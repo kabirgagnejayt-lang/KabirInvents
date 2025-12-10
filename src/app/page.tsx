@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Code, Cpu, Printer, ArrowRight } from "lucide-react";
+import { Code, Cpu, Printer, ArrowRight, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -12,6 +12,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
+      {/* Maintenance Banner */}
+      <div className="bg-yellow-100 dark:bg-yellow-900/30 border-b border-yellow-200 dark:border-yellow-800 p-4">
+        <div className="container flex items-center justify-center gap-2 text-yellow-800 dark:text-yellow-200">
+          <AlertCircle className="h-5 w-5" />
+          <p className="font-medium">Fastpass and Gagneja Speciality Clinic are currently under maintenance.</p>
+        </div>
+      </div>
+
       <section className="relative w-full py-20 md:py-32 lg:py-40 flex items-center justify-center text-center overflow-hidden">
         <div className="absolute inset-0 animated-gradient opacity-20"></div>
         <div className="container px-4 md:px-6 relative">
@@ -152,7 +160,7 @@ export default function Home() {
               description="Official website for Gagneja Speciality Clinic. Note: Fastpass and this site is currently under maintenance."
               image={getProjectImage("project-clinic")}
               link="https://gagnejaspecialityclinic.kabirinvents.com/"
-              status="Live"
+              status="Under Maintenance"
             />
             <ProjectCard
               title="KabirDNS"
@@ -166,7 +174,7 @@ export default function Home() {
               description="A digital identity service to simplify online interactions with autofill and SSO."
               image={getProjectImage("project-fastpass")}
               link="https://fastpass.kabirinvents.com"
-              status="Live"
+              status="Under Maintenance"
             />
           </div>
           <div className="mt-12">

@@ -8,7 +8,7 @@ const projects = [
     title: "Gagneja Speciality Clinic",
     description: "Official website for Gagneja Speciality Clinic. Note: Fastpass and this site is currently under maintenance.",
     link: "https://gagnejaspecialityclinic.kabirinvents.com/",
-    status: "Live"
+    status: "Under Maintenance"
   },
   {
     id: "project-kabirdns",
@@ -23,7 +23,7 @@ const projects = [
     title: "FastPass",
     description: "A digital identity service for autofill and single sign-on (SSO). Currently in Beta.",
     link: "https://fastpass.kabirinvents.com",
-    status: "Live",
+    status: "Under Maintenance",
     customImage: "https://i.postimg.cc/XXqmMpHZ/Chat_GPT_Image_Dec_9_2025_03_20_57_PM.png"
   },
   {
