@@ -10,13 +10,6 @@ const projects = [
     link: "/projects/kabirdns",
     status: "Live",
     customImage: "https://i.postimg.cc/3y3x8gzM/Chat_GPT_Image_Dec_9_2025_02_25_47_PM.png"
-  },
-  {
-    id: "project-qsolve",
-    title: "Qsolve",
-    description: "An AI homework solver. Removed from Play Store and website is offline. The app will show an error.",
-    link: "https://qsolve.kabirinvents.com",
-    status: "Discontinued"
   }
 ];
 

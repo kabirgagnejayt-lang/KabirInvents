@@ -21,7 +21,7 @@ export default function HostingDisclaimer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-12 items-center justify-between text-sm">
           <p className="text-center w-full sm:w-auto">
-            We have moved hosting from Firebase to Vercel for all our sites (except <span className="font-medium">qsolve.kabirinvents.com</span>). Vercel is faster and cheaper to operate.
+            We have moved hosting from Firebase to Vercel for all our sites. Vercel is faster and cheaper to operate.
           </p>
           <div className="ml-4 flex-shrink-0">
             <button
