@@ -4,6 +4,13 @@ import { Badge } from "@/components/ui/badge";
 
 const projects = [
   {
+    id: "project-clinic",
+    title: "Gagneja Speciality Clinic",
+    description: "Official website for Gagneja Speciality Clinic. Note: Fastpass and this site is currently under maintenance.",
+    link: "https://gagnejaspecialityclinic.kabirinvents.com/",
+    status: "Live"
+  },
+  {
     id: "project-kabirdns",
     title: "KabirDNS",
     description: "A faster, simpler, and more secure DNS resolver powered by Oracle Cloud.",
