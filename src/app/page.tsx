@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ProjectCard } from "@/components/ProjectCard";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { FastPassDemo } from "@/components/FastPassDemo";
 import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
@@ -19,14 +18,6 @@ export default function Home() {
         <div className="liquid-blob bg-blue-500/30 w-[500px] h-[500px] rounded-full top-[-100px] left-[-100px] mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob"></div>
         <div className="liquid-blob bg-purple-500/30 w-[500px] h-[500px] rounded-full top-[-100px] right-[-100px] mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
         <div className="liquid-blob bg-pink-500/30 w-[500px] h-[500px] rounded-full bottom-[-100px] left-[20%] mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-40 animate-blob animation-delay-4000"></div>
-      </div>
-
-      {/* Maintenance Banner */}
-      <div className="relative z-50 bg-yellow-500/10 backdrop-blur-md border-b border-yellow-500/20 p-4 text-center">
-        <div className="container flex items-center justify-center gap-2 text-yellow-600 dark:text-yellow-400">
-          <AlertCircle className="h-5 w-5" />
-          <p className="font-medium">Fastpass and Gagneja Speciality Clinic are currently under maintenance.</p>
-        </div>
       </div>
 
       {/* Hero Section - Spotlight on KabirDNS */}
@@ -103,28 +94,6 @@ export default function Home() {
           </div>
           
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-            {/* FastPass Card */}
-            <div className="glass-card rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
-              <ProjectCard
-                title="FastPass"
-                description="A digital identity service to simplify online interactions with autofill and SSO."
-                image={getProjectImage("project-fastpass")}
-                link="https://fastpass.kabirinvents.com"
-                status="Under Maintenance"
-              />
-            </div>
-
-            {/* Clinic Card */}
-            <div className="glass-card rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
-              <ProjectCard
-                title="Gagneja Speciality Clinic"
-                description="Official website for Gagneja Speciality Clinic."
-                image={getProjectImage("project-clinic")}
-                link="https://gagnejaspecialityclinic.kabirinvents.com/"
-                status="Under Maintenance"
-              />
-            </div>
-
             {/* 3D Print Farm */}
              <div className="glass-card rounded-xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
               <ProjectCard
