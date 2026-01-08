@@ -2,7 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, ExternalLink, Server, Shield, Zap, Globe } from "lucide-react";
+import { ArrowLeft, ExternalLink, Zap, Globe, Shield } from "lucide-react";
+
+const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.kabirgagnejainvents.kabirdns";
 
 export default function KabirDNSPage() {
   return (
@@ -20,7 +22,7 @@ export default function KabirDNSPage() {
           <div className="glass-panel p-6 rounded-2xl space-y-6">
             <div className="aspect-video relative rounded-xl overflow-hidden bg-muted">
                <Image 
-                src="https://i.postimg.cc/3y3x8gzM/Chat_GPT_Image_Dec_9_2025_02_25_47_PM.png" 
+                src="/public/kabirdns-hero.png" 
                 alt="KabirDNS"
                 fill
                 className="object-cover"
@@ -33,13 +35,20 @@ export default function KabirDNSPage() {
               </Badge>
             </div>
             <p className="text-muted-foreground">
-              A fast and secure DNS resolver built for personal and high-performance use.
+              Private, profile-based DNS with encrypted DNS‑over‑TLS, device management, and advanced filtering.
             </p>
-            <Button className="w-full" asChild>
-              <Link href="https://kabirdns.kabirinvents.com" target="_blank">
-                Visit Website <ExternalLink className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
+            <div className="space-y-2">
+              <Button className="w-full" asChild>
+                <Link href={PLAY_STORE} target="_blank">
+                  Get the Android App <ExternalLink className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+              <Button className="w-full" variant="outline" asChild>
+                <Link href="https://kabirdns.kabirinvents.com" target="_blank">
+                  Visit Dashboard <ExternalLink className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </div>
           </div>
 
           <div className="glass-panel p-6 rounded-2xl">
@@ -49,16 +58,16 @@ export default function KabirDNSPage() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex justify-between">
-                <span className="text-muted-foreground">Throughput</span>
-                <span className="font-medium">10 Gbps</span>
+                <span className="text-muted-foreground">Uptime SLA</span>
+                <span className="font-medium">99.99%</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-muted-foreground">Capacity</span>
-                <span className="font-medium">500k QPS</span>
+                <span className="text-muted-foreground">Avg Resolution</span>
+                <span className="font-medium">&lt;10ms</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-muted-foreground">Network</span>
-                <span className="font-medium">Oracle Cloud</span>
+                <span className="text-muted-foreground">Queries / Day</span>
+                <span className="font-medium">100K+</span>
               </li>
             </ul>
           </div>
@@ -66,77 +75,108 @@ export default function KabirDNSPage() {
 
         {/* Main Content */}
         <div className="lg:col-span-2 space-y-8">
-          {/* Purpose */}
+          {/* Hero / Tagline */}
           <section className="glass-panel p-8 rounded-2xl">
-            <h2 className="text-2xl font-bold font-headline mb-4">Purpose</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              KabirDNS is a DNS‑resolver service built by KabirInvents. It’s designed for personal and high‑performance use and runs on Oracle’s enterprise‑grade network. The service provides ultra‑low‑latency DNS resolution with up to 10 Gbps network throughput and can handle 500,000 DNS queries per second.
-            </p>
-          </section>
-
-          {/* DNS Options */}
-          <section className="glass-panel p-8 rounded-2xl">
-            <h2 className="text-2xl font-bold font-headline mb-6">DNS Options</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                <div className="mb-3 p-2 bg-primary/10 w-fit rounded-lg">
-                  <Globe className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold mb-2">Direct DNS Resolver</h3>
-                <code className="text-xs bg-black/20 px-2 py-1 rounded block mb-2 w-fit">dns.kabirinvents.com</code>
-                <p className="text-sm text-muted-foreground">
-                  Sends queries directly to the KabirDNS server without any intermediate layers.
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold font-headline mb-2">Private DNS for the Modern Internet</h2>
+                <p className="text-muted-foreground">
+                  Take control of your DNS with enterprise-grade privacy, lightning-fast resolution, and powerful filtering. Protect every device on your network with DNS‑over‑TLS.
                 </p>
               </div>
-              <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                <div className="mb-3 p-2 bg-primary/10 w-fit rounded-lg">
-                  <Shield className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold mb-2">Private DNS (DoT)</h3>
-                <code className="text-xs bg-black/20 px-2 py-1 rounded block mb-2 w-fit">pdns.kabirinvents.com</code>
-                <p className="text-sm text-muted-foreground">
-                  Offers encrypted DNS‑over‑TLS for enhanced privacy and security.
-                </p>
+              <div className="flex gap-3">
+                <Button asChild>
+                  <Link href={PLAY_STORE} target="_blank">Start Free Trial</Link>
+                </Button>
+                <Button variant="ghost" asChild>
+                  <Link href="/projects/kabirdns#pricing">View Pricing</Link>
+                </Button>
               </div>
             </div>
           </section>
 
-          {/* Key Features */}
+          {/* Why Choose KabirDNS */}
           <section className="glass-panel p-8 rounded-2xl">
-            <h2 className="text-2xl font-bold font-headline mb-6">Key Features</h2>
-            <ul className="grid sm:grid-cols-2 gap-4">
+            <h2 className="text-2xl font-bold font-headline mb-6">Why Choose KabirDNS?</h2>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg"><Shield className="w-5 h-5 text-primary" /></div>
+                  <div>
+                    <h4 className="font-semibold">Encrypted DNS (DoT)</h4>
+                    <p className="text-sm text-muted-foreground">Encrypt DNS queries with TLS 1.3 to stop eavesdropping and tampering.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg"><Zap className="w-5 h-5 text-primary" /></div>
+                  <div>
+                    <h4 className="font-semibold">Lightning Fast</h4>
+                    <p className="text-sm text-muted-foreground">Optimized caching and anycast routing keep typical resolution under 10ms.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg"><Globe className="w-5 h-5 text-primary" /></div>
+                  <div>
+                    <h4 className="font-semibold">Advanced Filtering</h4>
+                    <p className="text-sm text-muted-foreground">Block ads, trackers, malware, and adult content with customizable lists.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="p-2 bg-primary/10 rounded-lg"><Shield className="w-5 h-5 text-primary" /></div>
+                  <div>
+                    <h4 className="font-semibold">Device & Profile Management</h4>
+                    <p className="text-sm text-muted-foreground">Assign profiles per-device and manage your network from the mobile app or dashboard.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* How It Works */}
+          <section className="glass-panel p-8 rounded-2xl" id="setup">
+            <h2 className="text-2xl font-bold font-headline mb-4">Setup in Minutes</h2>
+            <ol className="list-decimal list-inside space-y-3 text-sm text-muted-foreground">
+              <li>Sign up and verify your account.</li>
+              <li>Add a device to get a unique hostname.</li>
+              <li>Set Android Private DNS to your hostname or use our app.</li>
+            </ol>
+            <p className="mt-4 text-sm">We support Android apps and manual Private DNS configuration. For app install: <Link href={PLAY_STORE} className="underline" target="_blank">Google Play</Link>.</p>
+          </section>
+
+          {/* Pricing */}
+          <section className="glass-panel p-8 rounded-2xl" id="pricing">
+            <h2 className="text-2xl font-bold font-headline mb-4">Pricing</h2>
+            <p className="text-sm text-muted-foreground mb-4">Simple, transparent pricing — start free and upgrade as you need more devices and features.</p>
+            <div className="grid sm:grid-cols-3 gap-4">
               {[
-                "10 Gbps network for high bandwidth",
-                "Optimized resolver (500k queries/sec)",
-                "Smart caching for frequent domains",
-                "High-speed encrypted DNS support",
-                "Redundant servers & fail-over logic",
-                "Enterprise-level statistics"
-              ].map((feature, i) => (
-                <li key={i} className="flex items-start">
-                  <div className="mr-3 mt-1 w-1.5 h-1.5 rounded-full bg-primary" />
-                  <span className="text-muted-foreground">{feature}</span>
-                </li>
+                { title: "Free", price: "S$0/mo", features: ["1 Device", "1 DNS Zone", "DoT", "Basic Filtering"] },
+                { title: "Lite", price: "S$1.99/mo", features: ["3 Devices", "5 DNS Zones", "30-day Logs"] },
+                { title: "Pro", price: "S$9.99/mo", features: ["10 Devices", "25 DNS Zones", "Priority Support"] }
+              ].map((plan) => (
+                <div key={plan.title} className="p-4 rounded-xl border border-white/10 bg-white/3">
+                  <h4 className="font-semibold mb-2">{plan.title}</h4>
+                  <div className="text-xl font-bold mb-2">{plan.price}</div>
+                  <ul className="text-sm text-muted-foreground mb-4">
+                    {plan.features.map((f) => <li key={f}>• {f}</li>)}
+                  </ul>
+                  <Button asChild>
+                    <Link href={PLAY_STORE} target="_blank">Get Started</Link>
+                  </Button>
+                </div>
               ))}
-            </ul>
+            </div>
           </section>
 
-          {/* Setup */}
-          <section className="glass-panel p-8 rounded-2xl bg-gradient-to-br from-primary/5 to-transparent">
-            <h2 className="text-2xl font-bold font-headline mb-4">Setup Guide</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold mb-2">Android Private DNS</h3>
-                <p className="text-sm text-muted-foreground mb-2">Use the Private DNS hostname:</p>
-                <code className="bg-black/20 px-3 py-2 rounded-lg block w-full sm:w-fit">pdns.kabirinvents.com</code>
-              </div>
-              <div className="h-px bg-white/10" />
-              <div>
-                <h3 className="font-semibold mb-2">Windows / macOS / Linux</h3>
-                <p className="text-sm text-muted-foreground mb-2">Set your DNS server address to:</p>
-                <code className="bg-black/20 px-3 py-2 rounded-lg block w-full sm:w-fit">dns.kabirinvents.com</code>
-              </div>
-            </div>
+          {/* Footer / Contact */}
+          <section className="glass-panel p-6 rounded-2xl">
+            <h3 className="font-semibold mb-2">Support & Legal</h3>
+            <p className="text-sm text-muted-foreground">Email: <a href="mailto:Kabirgagnejayt@gmail.com" className="underline">Kabirgagnejayt@gmail.com</a></p>
+            <p className="text-sm text-muted-foreground">Privacy Policy & Terms available on the dashboard site.</p>
           </section>
         </div>
       </div>
